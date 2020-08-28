@@ -19,6 +19,15 @@ body {
   justify-content: space-between;
 }
 
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
 .app__left {
   flex: 0.9;
 }
