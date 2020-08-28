@@ -23,9 +23,23 @@ body {
   flex: 0.9;
 }
 
+.app__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app__right h3 {
+  margin-bottom: 20px;
+}
+
 .app__status {
   display: flex;
   justify-content: space-between;
+}
+
+.line__graph {
+  margin-top: 20px;
 }
 
 @media (max-width: 990px) {

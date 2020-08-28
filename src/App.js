@@ -10,7 +10,7 @@ import "./App.css";
 import InfoBox from "./infobox/InfoBox";
 import Map from "./map/Map";
 import Table from "./table/Table";
-import { sortData } from "./utils";
+import { sortData, prettyPrintStat } from "./utils";
 import LineGraph from "./graph/LineGraph";
 import "leaflet/dist/leaflet.css";
 
@@ -44,6 +44,7 @@ function App() {
 
           const sortedData = sortData(data);
           setTableData(sortedData);
+          setMapCountries(data);
           setCountries(countries);
         });
     };
@@ -91,18 +92,18 @@ function App() {
         <div className="app__status">
           <InfoBox
             title="Coronavirus Case"
-            cases={countryInfo.todayCases}
-            total={countryInfo.cases}
+            cases={prettyPrintStat(countryInfo.todayCases)}
+            total={prettyPrintStat(countryInfo.cases)}
           />
           <InfoBox
             title="Recovered"
-            cases={countryInfo.todayRecovered}
-            total={countryInfo.recovered}
+            cases={prettyPrintStat(countryInfo.todayRecovered)}
+            total={prettyPrintStat(countryInfo.recovered)}
           />
           <InfoBox
             title="Deaths"
-            cases={countryInfo.todayDeaths}
-            total={countryInfo.deaths}
+            cases={prettyPrintStat(countryInfo.todayDeaths)}
+            total={prettyPrintStat(countryInfo.deaths)}
           />
         </div>
         {/* Map */}
@@ -117,8 +118,10 @@ function App() {
         <CardContent>
           <h3>Live Cases by Country</h3>
           <Table countries={tableData} />
+        </CardContent>
+        <CardContent>
           <h3>World wide New {casesType}</h3>
-          <LineGraph casesType={casesType} cases={countryInfo.cases} />
+          <LineGraph casesType={casesType} />
         </CardContent>
       </Card>
     </div>
