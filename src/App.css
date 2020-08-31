@@ -69,4 +69,16 @@ body {
   .app {
     flex-direction: column;
   }
+
+  .app__dropdown {
+    width: 200px;
+  }
+
+  .app__right {
+    margin-top: 10px;
+  }
+
+  .app__graphTitle {
+    margin-top: 16px;
+  }
 }

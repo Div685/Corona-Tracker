@@ -31,7 +31,7 @@ function InfoBox({
           {cases}
         </h2>
         <Typography className="infoBox__total" color="textSecondary">
-          {total} total
+          {total} Total
         </Typography>
       </CardContent>
     </Card>

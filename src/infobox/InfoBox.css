@@ -37,3 +37,12 @@
   border-color: orangered;
   color: orangered !important;
 }
+
+@media (max-width: 990px) {
+  .infoBox {
+    display: flex;
+  }
+  .infoBox__cases {
+    font-size: 20px;
+  }
+}
