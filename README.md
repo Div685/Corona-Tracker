@@ -56,4 +56,4 @@ Give a :star: if you like this project
 
 ## License
 
-This page is [MIT](License/) licence
+This page is [MIT](LICENSE/) licence
