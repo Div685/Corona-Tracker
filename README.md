@@ -44,7 +44,7 @@ To install some of the required packages in your local machine
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Div685/Corona-Tracker/issues).
 
 ## Show your support
 
@@ -56,4 +56,4 @@ Give a :star: if you like this project
 
 ## License
 
-This page is [MIT](https://github.com/Div685) licence
+This page is [MIT](https://github.com/Div685/License) licence
